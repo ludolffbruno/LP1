@@ -22,7 +22,7 @@ int  main ()
 		{
 			if (a% 2 == 0 )
 			{
-				printf ( " % d \ n " , a);
+				printf ( " % d \n " , a);
 			}
 
 		}
@@ -32,7 +32,7 @@ int  main ()
 		if (a> b) {
 				para (i = b; i <= a; i ++) {
 					if (a% 2 == 0 ) {
-						printf ( " % d \ n " , b);
+						printf ( " % d \n " , b);
 					}
 				}
 		
