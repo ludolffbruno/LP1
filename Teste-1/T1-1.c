@@ -10,7 +10,7 @@ int  main ( void ) {
         soma = (soma + num);
         num = (num - 1 );
     }
-    printf ( " Somou: % d  \ n " , soma);
+    printf ( " Somou: % d  \n " , soma);
  
     return  0 ;
 }
