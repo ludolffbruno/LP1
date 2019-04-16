@@ -6,21 +6,20 @@ int eh_primo (int n) {
 	int primo;
 	int div;	
 
-	for(i=2; i<n-1; i++) {
-		if (n%i == 0)
+	for(i=1; i<=n; i++) {
+		if (n%i == 0) {
  			primo = 0; // nao e primo
-		else {
+			div += 1;
+		}
+		else (n%i != 0); {
 			primo = 1;
 		}
 	}	
-
-	if (primo == 1)
+	if (div == 2)
 		return 1;
-	else (primo == 0);
+	else (div != 2);
 		return 0;
 }
-
-
 int main()
 {
 	int N,p;
@@ -36,7 +35,6 @@ int main()
 			printf("nao eh Primo! \n");
 		}	
 	}
-
 //	printf("%d \n", p);
 
 	return 0;
