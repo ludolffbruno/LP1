@@ -1,21 +1,21 @@
 #include<stdio.h>
-//protótipo 
-void compra(int*, int, int*) ;
+
+void compra(int*, int, int*) ; // funcao compra recebe como parametro: ponteiro, inteiro , ponteiro
 
 int main(){
     int mulher ,homem;
-    int*conta;
-	int compras[]= { 100 , 50 , 80 , 30 , 20 };
+    int*conta; // ponteiro criado
+	int compras[] = { 100 , 50 , 80 , 30 , 20 }; // vetor com 5 valores 
 
 	printf("Conta da Mulher: \n");
-	scanf("%d",&mulher);
+	scanf("%d",&mulher);			// recebe o valor da Conta_M
 
 	printf("Conta do Homem: \n");
-	scanf("%d",&homem);
-	printf ("\n");
+	scanf("%d",&homem);				// Recebe o valor da Conta_H
+ 	printf ("\n");                  // Pula Linha
 
 	printf ( " valor inicial da conta mulher: %d \n " , mulher);
-	printf ( " valor inicial da conta homem: %d \n\n\n" , homem);
+	printf ( " valor inicial da conta homem: %d \n" , homem);
 
 	for(int i=0; i < 5 ; i++) {
 
