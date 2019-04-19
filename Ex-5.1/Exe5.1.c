@@ -4,14 +4,13 @@ int main() {
 	int a,b;
 	int *p; // ponteiro
 
-	printf("Primeiro: \n");
-	scanf("%d",&a);
+	printf("Primeiro: \n");		// ler (a)
+	scanf("%d",&a);            
 
-	printf("Segundo: \n");
+	printf("Segundo: \n");		// ler (b)
 	scanf("%d",&b);
 	
 	if (a>b) { 
-
 		*p = a; // aponte para a
 		printf("Ponteiro criado para: %d \n",a);
 		a = (*p - 50);  // navegue por *p e subtraia 50
@@ -29,8 +28,6 @@ int main() {
 	printf("valor B: %d\n",b);
 
     //atraves de p subtraia 50 do maior valor 
-
-	
 
 	return 0;
 }

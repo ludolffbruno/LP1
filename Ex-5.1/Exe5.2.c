@@ -1,28 +1,30 @@
 #include<stdio.h>
 
-
-// ALTERAR 
-
-
-void compra(int*conta, int valor) {
-    *conta = *conta - valor;
+void compra(float*conta, float valor) {
+    *conta = *conta - valor;        // navegue pelo ponteiro e altere o valor
 
 }
 
 int main(void){
-    int m=1000 ,h = 800;
-    int*p;
+    float mulher ,homem;
+    float*p;
 
-    if (m > h) {
-        p = &m;
+	printf("Conta da Mulher: \n");
+	scanf("%f",&mulher);
+
+	printf("Conta do Homem: \n");
+	scanf("%f",&homem);
+
+    if (mulher > homem) {
+        p = &mulher; // p aponta para mulher
         
     } else {
-        p = &h;
+        p = &homem; // p aponta para homem
         
     }
 
-    compra(p,30);
-    printf ("%d  %d\n",m , h);
+    compra(p,500);
+    printf ("Mulher: %f \nHomem: %f\n",mulher,homem);
     
     return 0;
 }
