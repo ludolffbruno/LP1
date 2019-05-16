@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int preenche(int* vec, int n){ // para receber um vetor tem que ser ponteiro?
+int preenche(int* vec, int n){ // para receber um vetor tem que ser ponteiro? 
 
     printf("Qual tamanho do Vetor: ");     
     scanf("%d", &n);
@@ -20,9 +20,9 @@ int preenche(int* vec, int n){ // para receber um vetor tem que ser ponteiro?
 int media(int* vec,int n) {
     int m , soma , i=0;
 
-    for (i ; i <= n ; i+= ) {
-        soma += vec[i]
-        m = soma / n
+    for (i ; i <= n ; i+=1 ) {
+        soma += vec[i];
+        m = soma / n;
 
     }
     
@@ -35,12 +35,14 @@ int media(int* vec,int n) {
 // -------------------------------------------------//
 
 int main() {
-    int vec[100];
+
+    int vec[100]; // vet fixo 
     int n; // tem que ser aqui? pode ser dentro da função?
-
+	int resul=0;
     
+	resul = media(*vec,n);
 
-    printf ("Media: %d ",m);
+    printf ("Media: %d ",resul);
 
         
 
