@@ -11,7 +11,7 @@ int main() {
 	scanf("%d",&b);
 	
 	if (a>b) { 
-		*p = a; // aponte para a
+		*p = a; // navegue por p e atribua o valor de a
 		printf("Ponteiro criado para: %d \n",a);
 		a = (*p - 50);  // navegue por *p e subtraia 50
 		printf("valor subtraido: %d\n\n",a);

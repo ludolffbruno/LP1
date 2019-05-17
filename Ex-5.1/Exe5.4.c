@@ -4,6 +4,7 @@
 // prototipo de funcao
 void  troca ( int *  , int *  );  // recebe dois ponteiros de inteiros
 
+
 int  main ()
 {
 	int x = 10 ;
@@ -18,11 +19,11 @@ int  main ()
 	return  0 ;
 }
 
-
+// funcao de fato
 void troca( int* p1, int* p2)
 {
 	int aux;
-	aux = *p1;    // aux = &x
+	aux = *p1;    // aux recebe (navega por p1 e retorna resultado)
 	*p1 = *p2;  // p1 = &y
 	*p2 = aux;   // p2 = &x
 }

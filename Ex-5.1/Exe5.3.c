@@ -2,6 +2,8 @@
 
 void compra(int*, int, int*) ; // funcao compra recebe como parametro: ponteiro, inteiro , ponteiro
 
+// --------------------------------
+
 int main(){
     int mulher ,homem;
     int*conta; // ponteiro criado
@@ -27,10 +29,10 @@ int main(){
 
 		printf ("compras[%d]: %d\n", i, compras[i]); // compras[i] pos do vet
 
-		if ((*conta) >= 500) {
-			compra(conta, i, compras);
-			printf ( " mulher: %d \n" , mulher);
-			printf ( " homem: %d \n\n" , homem);
+		if ((*conta) >= 500) {   // Conta verificado no if else
+			compra(conta, i, compras);   //chama a função com parametro certo
+			printf ( "mulher: %d \n" , mulher);
+			printf ( "homem: %d \n\n" , homem);
 		} else {
 			printf("As contas nao valem suficiente para efetuar uma compra!\n\n");
 		}
