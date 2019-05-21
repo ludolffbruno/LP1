@@ -5,7 +5,7 @@ int preenche(int* vec, int n){ //
 	int i = 0;
     while (n > 0) {
         printf("Inserindo no vetor: ");   
-        scanf("%d", vec); // vec = &vec[i].
+        scanf("%d", &vec[i]); 
         i += 1;
         n -= 1;
         }        
@@ -15,18 +15,18 @@ int preenche(int* vec, int n){ //
 // -------------------------------------------------//
 
 int media(int* vec,int n) { // qnd passo um ponteiro apontando para um vetor
-    int m , soma , i=0;		// o gcc já aponta para o primeiro membro d vetor.
+    int m , soma=0 , i=0;		// o gcc já aponta para o primeiro membro d vetor.
 
     for (i ; i < n ; i+=1 ) {
 		
-//		printf ("Valor VEC: %d\n",vec[i]);
+		printf ("Valor VEC: %d\n",vec[i]);
 
         soma += vec[i];    //valor correspondente a posição i
 
-//	    printf ("SOMA DENTRO MEDIA: %d\n",soma);
-		        
-		m = soma / n;
+	    printf ("SOMA DENTRO MEDIA: %d\n",soma);
     }
+	m = soma / n;
+
     return m;    
 }
 
@@ -48,4 +48,5 @@ int main() {
 
     return 0;
 }
+
 
