@@ -1,11 +1,11 @@
 #include<stdio.h>
 
-int preenche(int* vec, int n){ //  
+int preenche(int* vec, int n){  //   coloca valores no vetor
 	
 	int i = 0;
     while (n > 0) {
-        printf("Inserindo no vetor: ");   
-        scanf("%d", &vec[i]); 
+        printf("Adicionando valores ao vetor: ");   
+        scanf("%d", &vec[i]);  // atribuindo o valor lido a &vec[i]
         i += 1;
         n -= 1;
         }        
@@ -17,15 +17,15 @@ int preenche(int* vec, int n){ //
 int media(int* vec,int n) { // qnd passo um ponteiro apontando para um vetor
     int m , soma=0 , i=0;		// o gcc já aponta para o primeiro membro d vetor.
 
-    for (i ; i < n ; i+=1 ) {
+    for (i ; i < n ; i+=1 ) {  // 0 <= i <= n-1
 		
-		printf ("Valor VEC: %d\n",vec[i]);
+//		printf ("Valor que ta na posicão %d do VEC é: %d\n",i,vec[i]);
 
-        soma += vec[i];    //valor correspondente a posição i
+        soma += vec[i];    //soma valor correspondente a posição i
 
-	    printf ("SOMA DENTRO MEDIA: %d\n",soma);
+//	    printf ("SOMA DENTRO MEDIA: %d\n",soma);
     }
-	m = soma / n;
+	m = soma / n; 
 
     return m;    
 }
@@ -34,15 +34,15 @@ int media(int* vec,int n) { // qnd passo um ponteiro apontando para um vetor
 
 int main() {
 
-    int vec[100]; // vet fixo 
+    int vet[100]; // vet fixo 
     int n; // tem que ser aqui? pode ser dentro da função?
 
     printf("Qual tamanho do Vetor: ");     
     scanf("%d", &n);
 
-	int a = preenche(vec,n);
+	int a = preenche(vet,n);
 	    
-	float med = media(vec,n);
+	float med = media(vet,n);
 
     printf ("Media: %f \n",med);
 
