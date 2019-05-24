@@ -2,7 +2,6 @@
 
 // ler 50 tmp para o vetor, media , exibir qts de leitura acima da media
 
-
 int main() {
 
 	int qtd = 0, i, soma=0 , n;
