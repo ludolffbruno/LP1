@@ -4,19 +4,19 @@
 
 
 int main() {
-
 	int qtd = 0, i, soma=0 , n;
     float media;
 
     printf("Quantas temps? :  \n");
     scanf("%d",&n);
-	int vet[n];
+	char vet[n+1];
 
 	for ( i = 0 ; i <= n-1 ; i = i + 1 ) {
-		int vet;
-		printf("Digite a temperatura: \n") ; 
-       	scanf("%d",&vet[i]) ;		// scanf nao tem \n se colocar da erro.
-		vet[i] = vet;	
+		int vete;
+		printf("Digite a temperatura: \n"); 
+       	scanf("%d",&vete);		// scanf nao tem \n se colocar da erro.
+		vet[i] = vete;
+        printf("\t vet[%d]: %d \n",i,vet[i]);		
 
         soma += vet[i];
         //printf("Soma: %d \n",soma);
