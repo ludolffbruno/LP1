@@ -23,17 +23,15 @@ int eh_primo (int n) {
 int main()
 {
 	int N,p;
-	printf("digite: ");
+	printf("Pergunte se é primo: ");
 	scanf("%d",&N);
 	p = eh_primo(N);
 
 	if (p == 1) {
 		printf("eh Primo! \n");
 	}
-	else {
-		if (p == 0) {
+	else if (p == 0) {
 			printf("nao eh Primo! \n");
-		}	
 	}
 //	printf("%d \n", p);
 

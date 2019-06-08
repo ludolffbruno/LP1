@@ -1,0 +1,57 @@
+
+	Qual é a diferença entre tipagem estática e dinâmica?
+
+ESTÁTICA: (Precisa declarar variavel, imutavel).
+
+A definição básica da tipagem estática que uma linguagem de programação pode ter como característica é que há uma verificação dos tipos usados em dados e variáveis para garantir que sempre está sendo usado um tipo que é esperado em todas as situações. Esta verificação é feita no código fonte pelo processo de compilação. Esta análise ajuda na chamada segurança de tipos na utilização dos dados pelo programa permitindo que o programador se preocupe menos com esta questão. O compilador fornece garantias que alguns problemas não poderão ocorrer após o programa passar por esta verificação, ou seja, erros são detectados logo, antes do programa ser efeticamente executado.
+
+Uma variável não pode mudar seu tipo.
+
+No entanto a tipagem estática pode causar uma falsa sensação de segurança. Só uma parte dos erros podem ser descobertos antecipadamente.
+
+----------------------------------------------------------------
+
+DINÂMICA: (Não precisa declarar, mutavel)
+
+Na tipagem dinâmica esta verificação também ocorre mas ela é feita em cima do dado em si, já que as variáveis podem conter qualquer tipo de dado. Claro que em determinado momento uma variável só pode conter um tipo de dado e isto é verificado. Mas a principal diferença é que a esta verificação é feita em tempo de execução. Isto é feito através de uma infraestrutura auxiliar (uma máquina virtual ou uma biblioteca normalmente chamada de runtime). É comum o programador ter que fazer suas próprias verificações no programa ou em códigos externos de teste para garantir que todos os tipos estão corretos nos momentos certos. O programador tem que se preocupar mais com os tipos embora em soluções simples pode parecer que a preocupação não seja necessária.
+
+O que é dinâmico efetivamente é o tipo da variável. Entender e documentar os tipos ainda são necessários. Há linguagens que incentivam fazer a documentação no código com notação húngara.
+
+Dados precisam ser representados concretamente no computador. Variável é um design pattern. Portanto é uma abstração. Dados não podem assumir várias formas, no máximo pode ser interpretados de formas diferentes em casos específicos. Variáveis podem se referenciar a tipos de diferentes. Portanto a tipagem dinâmica costuma ser um caso especial da tipagem estática. Segundo Bob Harper, um dos criadores da linguagem Standard ML, "uma linguagem dinamicamente tipada é uma linguagem estaticamente tipada com apenas um tipo estático".
+
+Na prática a tipagem dinâmica é uma abstração também. Há uma ilusão que você pode se referenciar a um dado que possui diferentes tipos mas na prática existe apenas um marcador e há um apontamento para um dado estático diferente.
+
+As técnicas mais comuns para alcançar esta ilusão é o uso de um tipo união (union em C/C++) e/ou ponteiros sem especificação de tipo (void * em C/C++). Todos os dados terão algum overhead de memória.
+
+-------------------------------------------------------------------------
+
+
+	Dê exemplos de linguagens que usem tipagem estática e exemplos de linguagens que usem tipagem dinâmica.
+
+Estática : C
+Dinâmica : Python
+
+--------------------------------------------------------------------------
+
+	Por quê uma linguagem com tipagem estática é tipicamente mais rápida do que uma com tipagem dinâmica? Justifique usando um exemplo.
+
+Na tipagem dinâmica é usado a inferência de tipo, para que saiba qual tipo está 
+trabalhando, por isso demora mais que a tipagem estática.
+
+--------------------------------------------------------------------------
+
+Tipagem Forte e Fraca
+
+Uma forma simples de definir a tipagem forte e fraca é que, caso ela seja forte, teremos a verificação de tipos em todas as operações em tempo de execução ou compilação, já a fraca não temos essa verificação.
+
+
+
+
+
+
+Referência: 
+http://felipequadros.com/programa%C3%A7%C3%A3o/b%C3%A1sico/iniciante/geral/teoria/2016/06/05/tipagem-fraca-forte-est%C3%A1tica-din%C3%A2mica-e-inferencia-de-tipo/
+
+
+
+

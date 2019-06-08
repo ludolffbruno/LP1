@@ -12,8 +12,8 @@ int main(void){
 
     if (m > h) {
         p = &m;  // aponte para a conta da mulher
-        
-    } else { // <=
+  //ou  *p = m
+    } else { 
         p = &h;  // aponte para a conta do homem
         
     }

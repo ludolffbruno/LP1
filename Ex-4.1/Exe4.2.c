@@ -28,7 +28,7 @@ int main()
 	printf("digite o MAX: ");
 	scanf("%d",&max);
 
-	printf("O numero 1 é Primo! \n "); // 1 é primo.
+	printf("O numero 1 é Primo! \n"); // 1 é primo.
 	
 	for(N=1; N<=max; N++) {
 		p = eh_primo(N);
