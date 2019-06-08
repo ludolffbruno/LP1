@@ -41,8 +41,8 @@ int main(){
 	return 0;
 }
 
-void compra(int*Conta, int i, int *Compras){
-	*(Conta)=*(Conta) - Compras[i];
+void compra(int*Conta, int i, int *Compras){  // nao esquecer que vetor/arrays é 
+	*(Conta)=*(Conta) - Compras[i];			  // ponteiro, por isso int* Compras
 }
 
 
