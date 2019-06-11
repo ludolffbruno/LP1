@@ -15,7 +15,7 @@ int preenche(int* vec, int n){  //   coloca valores no vetor
 // -------------------------------------------------//
 
 int media(int* vec,int n) { // qnd passo um ponteiro apontando para um vetor
-    int soma=0 , i=0;		// o gcc já aponta para o primeiro membro d vetor.
+    int soma=0 , i=0;		// o gcc já aponta para a primeira posicão d vetor.
 	float m;
     for (i ; i < n ; i+=1 ) {  // 0 <= i <= n-1
 		
@@ -35,7 +35,7 @@ int media(int* vec,int n) { // qnd passo um ponteiro apontando para um vetor
 int main() {
 
     int vet[100]; // vet fixo 
-    int n; // tem que ser aqui? pode ser dentro da função?
+    int n; 
 
     printf("Qual tamanho do Vetor: ");     
     scanf("%d", &n);
