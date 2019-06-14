@@ -4,8 +4,8 @@
 int strlen2(char* str){
 	int count=0;
 	
-	while (str[count] != '\0'){
-		count += 1;
+	while (str[count] != '\0'){  // enquanto houver caracteres validos,
+		count += 1; 			// conte-os.
 	}
 
 	return count;	

@@ -23,7 +23,7 @@ void strjoin2(char* d, char* o1, char* o2){
 		d[i] = o2[j];
 		i++;
 	}
-	
+	d[i] = '\0';
 }
 
 int main() {
@@ -31,8 +31,9 @@ int main() {
 	char o2[50];
 	char d[100];
 
-	printf("Digite as Strings: ");
+	printf("Strings 1: ");
 	scanf("%s",o1); 
+	printf("Strings 2: ");
 	scanf("%s",o2);
 
 //	printf("%s\n%s\n",o1,o2);
