@@ -30,3 +30,4 @@ void main(void) {
 			p2.forca, p2.energia, p2.experiencia);
 }
 
+
