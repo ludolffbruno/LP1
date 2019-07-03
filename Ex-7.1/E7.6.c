@@ -1,5 +1,6 @@
 #include<stdio.h> 
 #include<string.h>
+
 struct skatista { //funcão do tipo estrutura. com campos: .
   char nome[50];
   int idade; 
@@ -42,9 +43,6 @@ void main(void) {
 
 	exibe(&p1);
 	exibe(&p2);
-
-//	exibe(&p1);
-//	exibe(&p2);
 
 }
 
