@@ -1,5 +1,10 @@
 #include<stdio.h>
 
+void main(){
+
+
+}
+
 /*
 
 Exercicio 7.2
